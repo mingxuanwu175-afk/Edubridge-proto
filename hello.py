@@ -6,4 +6,6 @@ print(f"Version: {version}")
 criteria = ["A1", "A2", "B1", "B2"]
 for c in criteria:
     print(f"Criterion: {c}")
-          
+
+name=input("what's your name? ")
+print(f"hello, {name}")         
