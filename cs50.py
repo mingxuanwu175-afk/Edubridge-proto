@@ -24,6 +24,12 @@ print("I am", age)
 print('hello, "friend"')
 print("hello, \"friend\"")
 
+#string methods
+name = input("what's your name? ")
+name = name.strip()
+
 #f-string
 name=input("what's your name? ")
 print(f"hello, {name}")
+
+
