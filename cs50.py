@@ -24,12 +24,44 @@ print("I am", age)
 print('hello, "friend"')
 print("hello, \"friend\"")
 
-#string methods
-name = input("what's your name? ")
-name = name.strip()
-
-#f-string
+#f-string (say hello to the user)
 name=input("what's your name? ")
 print(f"hello, {name}")
 
+#ask user for their name #remove whitespace from str，Capitalize each word in the user's name, slip user's name into fiirst name and last name
+name = input("what's your name? ").strip().title().split(" ")[0]
+#say hello to user
+print(f"hello, {name}")
 
+#it is equal to：
+name = input("what's your name? ")
+name = name.strip()
+print("hello,", name.title())
+
+def main():
+    name=input("what's your name")
+    hello(name)
+def hello(to="world"):
+    print(f"hello, {to}")
+main()
+
+x=int(input("what's x? "))
+y=int(input("what's y? "))
+print(x+y)
+
+x=float(input("what's x? "))
+y=float(input("what's y? "))
+z=round(x+y)
+print(f"{z:,}")
+
+x=float(input("what's x? "))
+y=float(input("what's y? "))
+z=x/y
+print(f"{z:.2f}")
+
+def main():
+    x=int(input("what's x? "))
+    print("x squared is", square(x))
+def square(n):
+    return n*n
+main()
